@@ -23,11 +23,11 @@ if(isset($_GET["id"])){
             <a href="index.php" class="logo">CMS</a>
             <p class="title">
                 <?php echo $data["titleArticle"];?>
+                <span class="timestamp">
+                - posted <?php echo date("l jS", $data["timestampArticle"]);?>
+                </span>
             </p>
-            <p class="timestamp">
-             - posted <?php echo date("l jS", $data["timestampArticle"]);?>
-            </p>
-            <p>
+            <p class="content">
                 <?php echo $data["contentArticle"];?>
             </p>
             <a href="index.php">&larr; Back</a>
