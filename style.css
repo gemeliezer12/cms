@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width: 90vw;
+    margin: auto;
+    padding-top: 60px;
+    display: block;
+}
+
+.logo{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    display: block;
+}
+
+ol{
+    list-style: none;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+ol li{
+    margin-bottom: 10px;
+}
+
+.timestamp{
+    font-size: 15px;
+    display: inline;
+    font-weight: normal;
+}
+
+a, a:visited{
+    color: black;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.admin{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-form input, .add-form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    border: 1px solid black;
+    resize: vertical;
+}
+
+.add-form .add-submit{
+    width: auto;
+    border-radius: 6px;
+}
+
+form .title{
+    margin-bottom: 10px;
+}
+
+.delete-form input, .delete-form select{
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-right: 4px;
+}

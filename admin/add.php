@@ -27,20 +27,22 @@ if(isset($_SESSION["loggedIn"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <a href="../index.php" id="logo">CMS</a>
+        <a href="../index.php" class="logo">CMS</a>
         <br><br>
         <?php if(isset($error)){?>
         <small style="color: #aa0000;"><?php echo $error?></small>
         <?php }?>
-        <form action="add.php" method="POST" autocomplete="off">
+        <form class="add-form" action="add.php" method="POST" autocomplete="off">
             <input type="text" name="title" placeholder="Title">
             <textarea name="content" placeholder="Content"></textarea>
-            <input type="submit" name="add-submit" value="Add Article">
+            <input class="add-submit" type="submit" name="add-submit" value="Add Article">
         </form>
+        <a class="admin" href="index.php">admin</a>
     </div>
 </body>
 </html>

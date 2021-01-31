@@ -9,15 +9,16 @@ if(isset($_SESSION["loggedIn"])){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
         <title>Document</title>
     </head>
     <body>
         <div class="container">
-            <a href="../index.php" id="logo">CMS</a>
+            <a href="../index.php" style="display: block;" class="logo">CMS</a>
             <ol>
-                <li><a href="add.php">Add Article</a></li>
-                <li><a href="delete.php">Delete/Edit Article</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="add.php">1. Add Article</a></li>
+                <li><a href="delete.php">2. Delete/Edit Article</a></li>
+                <li><a href="logout.php">3. Logout</a></li>
             </ol>
         </div>
     </body>
@@ -63,7 +64,7 @@ else{
 </head>
 <body>
     <div class="container">
-        <a href="../index.php" id="logo">CMS</a>
+        <a href="../index.php" class="logo">CMS</a>
         <?php if(isset($error)){?>
         <small style="color: #aa0000;"><?php echo $error?></small>
         <?php }?>

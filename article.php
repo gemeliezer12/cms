@@ -15,21 +15,25 @@ if(isset($_GET["id"])){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
     <body>
-            <a href="index.php" id="logo">CMS</a>
-            <h4>
+        <div class="container">
+            <a href="index.php" class="logo">CMS</a>
+            <p class="title">
                 <?php echo $data["titleArticle"];?>
-                <small>
-                    posted <?php echo date("l jS", $data["timestampArticle"])?>
-                </small>
-                <p>
-                    <?php echo $data["contentArticle"];?>
-                </p>
-                <a href="index.php">&larr; Back</a>
-            </h4>
+            </p>
+            <p class="timestamp">
+             - posted <?php echo date("l jS", $data["timestampArticle"]);?>
+            </p>
+            <p>
+                <?php echo $data["contentArticle"];?>
+            </p>
+            <a href="index.php">&larr; Back</a>
+            
             <a href="admin/index.php">admin</a>
+        </div>
     </body>
     </html>
 <?php
