@@ -38,8 +38,8 @@ if(isset($_SESSION["loggedIn"])){
         <?php }?>
         <form class="add-form" action="add.php" method="POST" autocomplete="off">
             <input class="button" type="text" name="title" placeholder="Title">
-            <textarea class="button" name="content" placeholder="Content"></textarea>
-            <input class="button" type="submit" name="add-submit" value="Add Article">
+            <textarea class="button content-input" name="content" placeholder="Content"></textarea>
+            <input class="button add-article-btn" type="submit" name="add-submit" value="Add Article">
         </form>
         <a class="admin" href="index.php">admin</a>
     </div>

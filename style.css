@@ -61,8 +61,20 @@ a, a:visited{
 }
 
 .add-form *{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
+}
+
+.content-input{
+    height: 80px;
+}
+
+.add-article-btn{
+    width: auto;
+}
+
+.delete-form *{
+    margin-right: 6px;
 }
 
 .button{
@@ -71,5 +83,5 @@ a, a:visited{
     padding-right: 6px;
     border-radius: 4px;
     border: 1px solid black;
-    margin-right: 4px;
+    resize: vertical;
 }

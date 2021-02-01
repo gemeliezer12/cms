@@ -20,8 +20,8 @@ if(isset($_SESSION["loggedIn"])){
     <body>
         <div class="container">
             <a href="../index.php" style="display: block;" class="logo">CMS</a>
+            <p class="title">Choose an article to delete</p>
             <form class="delete-form" action="delete.php" method="get">
-                <p class="title">Choose an article to delete</p>
                 <select class="button" name="id">
                     <?php foreach($articles as $article){?>
                     <option value="<?php echo $article["idArticle"];?>">
