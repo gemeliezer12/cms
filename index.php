@@ -16,17 +16,18 @@ $articles = $article->fetchAll();
 <body>
     <div class="container">
         <p class="logo">CMS</p>
-        <ol>
+        <ol class="list">
         <?php foreach($articles as $article){?>
             <li>
                 <a class="title" href="article.php?id=<?php echo $article["idArticle"]?>">
                     <?php
                     echo $article["titleArticle"]
                     ?>
-                </a>
-                <p class="timestamp">
+                    <p class="timestamp">
                      - posted <?php echo date("l jS", $article["timestampArticle"]);?>
-                </p>
+                    </p>
+                </a>
+                
             </li>
             <?php }?>
         </ol>

@@ -22,14 +22,14 @@ if(isset($_SESSION["loggedIn"])){
             <a href="../index.php" style="display: block;" class="logo">CMS</a>
             <form class="delete-form" action="delete.php" method="get">
                 <p class="title">Choose an article to delete</p>
-                <select name="id">
+                <select class="button" name="id">
                     <?php foreach($articles as $article){?>
                     <option value="<?php echo $article["idArticle"];?>">
                         <?php echo $article["titleArticle"];?>
                     </option>
                     <?php }?>
                 </select>
-                <input type="submit" name="delete-submit" value="Delete Article">
+                <input class="button" type="submit" name="delete-submit" value="Delete Article">
                 <?php
                 if(isset($_GET["delete-submit"])){
                     $id = $_GET["id"];

@@ -33,14 +33,13 @@ if(isset($_SESSION["loggedIn"])){
 <body>
     <div class="container">
         <a href="../index.php" class="logo">CMS</a>
-        <br><br>
         <?php if(isset($error)){?>
         <small style="color: #aa0000;"><?php echo $error?></small>
         <?php }?>
         <form class="add-form" action="add.php" method="POST" autocomplete="off">
-            <input type="text" name="title" placeholder="Title">
-            <textarea name="content" placeholder="Content"></textarea>
-            <input class="add-submit" type="submit" name="add-submit" value="Add Article">
+            <input class="button" type="text" name="title" placeholder="Title">
+            <textarea class="button" name="content" placeholder="Content"></textarea>
+            <input class="button" type="submit" name="add-submit" value="Add Article">
         </form>
         <a class="admin" href="index.php">admin</a>
     </div>

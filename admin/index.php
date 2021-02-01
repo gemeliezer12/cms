@@ -15,7 +15,7 @@ if(isset($_SESSION["loggedIn"])){
     <body>
         <div class="container">
             <a href="../index.php" style="display: block;" class="logo">CMS</a>
-            <ol>
+            <ol class="list">
                 <li><a href="add.php">1. Add Article</a></li>
                 <li><a href="delete.php">2. Delete/Edit Article</a></li>
                 <li><a href="logout.php">3. Logout</a></li>
@@ -60,6 +60,7 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
@@ -69,9 +70,9 @@ else{
         <small style="color: #aa0000;"><?php echo $error?></small>
         <?php }?>
         <form action="index.php" method="POST" autocomplete="off">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="pwd" placeholder="Password">
-            <input type="submit" name="login-submit" value="Login">
+            <input class="button" type="text" name="username" placeholder="Username">
+            <input class="button" type="password" name="pwd" placeholder="Password">
+            <input class="button" type="submit" name="login-submit" value="Login">
         </form>
     </div>
 </body>

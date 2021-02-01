@@ -20,7 +20,7 @@ if(isset($_GET["id"])){
     </head>
     <body>
         <div class="container">
-            <a href="index.php" class="logo">CMS</a>
+            <p class="logo">CMS</a>
             <p class="title">
                 <?php echo $data["titleArticle"];?>
                 <span class="timestamp">
@@ -30,9 +30,9 @@ if(isset($_GET["id"])){
             <p class="content">
                 <?php echo $data["contentArticle"];?>
             </p>
-            <a href="index.php">&larr; Back</a>
+            <a href="index.php">&larr; Back to CMS</a>
             
-            <a href="admin/index.php">admin</a>
+            <a class="admin" href="admin/index.php">admin</a>
         </div>
     </body>
     </html>
