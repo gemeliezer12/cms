@@ -46,6 +46,7 @@ if(isset($_SESSION["loggedIn"])){
                 }
                 ?>
             </form>
+            <a class="admin" href="admin/index.php">admin</a>
         </div>
     </body>
     </html>

@@ -65,6 +65,10 @@ a, a:visited{
     width: 100%;
 }
 
+.add-form .add-article-btn{
+    margin-bottom: 0;
+}
+
 .content-input{
     height: 80px;
 }
