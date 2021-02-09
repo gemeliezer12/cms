@@ -19,7 +19,9 @@ if(isset($_SESSION["loggedIn"])){
     </head>
     <body>
         <div class="container">
-            <a href="../index.php" style="display: block;" class="logo">CMS</a>
+            <div>
+                <a href="../index.php" style="display: block;" class="logo">CMS</a>
+            </div>
             <p class="title">Choose an article to delete</p>
             <form class="delete-form" action="delete.php" method="get">
                 <select class="button" name="id">
@@ -39,14 +41,12 @@ if(isset($_SESSION["loggedIn"])){
 
                     header("Location: delete.php");
                 }
-                if(isset($_GET["edit-page"])){
-                    $id = $_GET["id"];
 
-                    header("Location: edit.php?id=".$id);
-                }
                 ?>
             </form>
-            <a class="admin" href="admin/index.php">admin</a>
+            <div class="admin">
+                <a href="index.php">admin</a>
+            </div>
         </div>
     </body>
     </html>

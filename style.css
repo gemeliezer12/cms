@@ -10,9 +10,9 @@
 }
 
 .container{
-    width: 90vw;
+    width: 80vw;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 80px;
     display: block;
 }
 
@@ -21,6 +21,7 @@
     margin-bottom: 40px;
     font-weight: lighter;
     display: block;
+    width: 0;
 }
 
 .list{
@@ -57,7 +58,6 @@ a, a:visited{
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
-    display: block;
 }
 
 .add-form *{
@@ -79,6 +79,7 @@ a, a:visited{
 
 .delete-form *{
     margin-right: 6px;
+    font-size: 15px;
 }
 
 .button{
@@ -88,4 +89,15 @@ a, a:visited{
     border-radius: 4px;
     border: 1px solid black;
     resize: vertical;
+}
+
+.edit-form *{
+    margin-bottom: 20px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.edit-article-btn{
+    width: auto;
+    margin: 0;
 }

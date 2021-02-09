@@ -23,15 +23,16 @@ $articles = $article->fetchAll();
                     <?php
                     echo $article["titleArticle"]
                     ?>
-                    <p class="timestamp">
-                     - posted <?php echo date("l jS", $article["timestampArticle"]);?>
-                    </p>
                 </a>
-                
+                <p class="timestamp">
+                    - posted <?php echo date("l jS", $article["timestampArticle"]);?>
+                </p>
             </li>
             <?php }?>
         </ol>
-        <a class="admin" href="admin/index.php">admin</a>
+        <p  class="admin">
+            <a href="admin/index.php">admin</a>
+        </p>
     </div>
 </body>
 </html>

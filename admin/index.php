@@ -17,7 +17,7 @@ if(isset($_SESSION["loggedIn"])){
             <a href="../index.php" style="display: block;" class="logo">CMS</a>
             <ol class="list">
                 <li><a href="add.php">1. Add Article</a></li>
-                <li><a href="delete.php">2. Delete/Edit Article</a></li>
+                <li><a href="delete.php">2. Delete Article</a></li>
                 <li><a href="logout.php">3. Logout</a></li>
             </ol>
         </div>
@@ -47,7 +47,6 @@ else{
             if($num == 1){
                 $_SESSION["loggedIn"] = true;
                 header("index.php");
-                
             }
             else{
                 $error = "Incorrect details";

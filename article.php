@@ -32,7 +32,9 @@ if(isset($_GET["id"])){
             </p>
             <a href="index.php">&larr; Back to CMS</a>
             
-            <a class="admin" href="admin/index.php">admin</a>
+            <p  class="admin">
+                <a href="admin/index.php">admin</a>
+            </p>
         </div>
     </body>
     </html>

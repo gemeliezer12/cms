@@ -32,7 +32,9 @@ if(isset($_SESSION["loggedIn"])){
 </head>
 <body>
     <div class="container">
-        <a href="../index.php" class="logo">CMS</a>
+        <p>
+            <a href="../index.php" class="logo">CMS</a>
+        </p>
         <?php if(isset($error)){?>
         <small style="color: #aa0000;"><?php echo $error?></small>
         <?php }?>
@@ -41,7 +43,9 @@ if(isset($_SESSION["loggedIn"])){
             <textarea class="button content-input" name="content" placeholder="Content"></textarea>
             <input class="button add-article-btn" type="submit" name="add-submit" value="Add Article">
         </form>
-        <a class="admin" href="index.php">admin</a>
+        <div class="admin">
+            <a href="index.php">admin</a>
+        </div>
     </div>
 </body>
 </html>
