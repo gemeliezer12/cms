@@ -32,6 +32,8 @@ if(isset($_SESSION["loggedIn"])){
                     <?php }?>
                 </select>
                 <input class="button" type="submit" name="delete-submit" value="Delete Article">
+                <input class="button" type="submit" name="edit-submit" value="Edit Article">
+                
                 <?php
                 if(isset($_GET["delete-submit"])){
                     $id = $_GET["id"];
@@ -40,6 +42,11 @@ if(isset($_SESSION["loggedIn"])){
                     $query->execute();
 
                     header("Location: delete.php");
+                }
+                if(isset($_GET["edit-submit"])){
+                    $id = $_GET["id"];
+
+                    header("Location: edit.php?id=$id");
                 }
 
                 ?>
